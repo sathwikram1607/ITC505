@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Serving Fonts</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/maulysia');
+                
+        body {
+            font-family: 'maulysia', sans-serif;                                      
+        }
+        .last-updated{
+            font-family: 'Timesnewroman';
+        }
+    </style>
+</head>
+<body>
+    <h1 class = "heading">
+        How a specific font can be delivered to a client (browser) making a request to your server ?
+    </h1>
+    <p>
+        When a client’s browser requests content from your server, you can ensure that a specific font is delivered to it using the following techniques:
+    <br>1. CSS Embedded Fonts (font-face)
+    <br>2. Font Hosting Services
+    <br>3. Self-Hosting
+    </p>
+    <p>
+        Certainly! Let’s delve into the second point, which involves using font hosting services to ensure that specific fonts are delivered to clients’ browsers:
+    </p>
+    <h2 class = "heading">
+        Font Hosting Services:
+    </h2>
+    <ul>
+        <li><h3>What are they?</h3> Font hosting services provide a convenient way to access and use a wide variety of fonts on your website. These services host font files on their servers, making it easy for you to include them in your web pages.</li>
+        <li><h3>Why use them?</h3></li>
+        <ol>
+            <li>Wide Selection: Font hosting services offer extensive catalogs of fonts, including both free and premium options.</li>
+            <li>Global Availability: Fonts are served from content delivery networks (CDNs), ensuring fast and reliable access for users worldwide.</li>
+            <li>Version Control: Updates and improvements to fonts are managed by the service, so you always have the latest versions.</li>
+        </ol>
+        <li><h3>How do they work ?</h3></li>
+        <ul>
+            <li>Choose a font hosting service (e.g., Google Fonts, Adobe Fonts, or self-hosted solutions)</li>
+            <li>Link to the hosted font files in your HTML or CSS.</li>
+            <li>Specify the font family in your CSS rules.</li>
+        </ul>
+        <li><h3>Examples</h3></li>
+        <ul>
+            <li><b>Google Fonts:</b><br> Google Fonts provides a vast collection of open-source fonts. To use a font from Google Fonts:</li>
+            <ol>
+                <li>Visit the Google Fonts website.</li>
+                <li>Choose a font.</li>
+                <li>Click the “Select This Font” button.</li>
+                <li>Copy the provided &lt;link&gt; tag and add it to your HTML &lt;head&gt;.</li>
+                <li>Apply the font to your elements using CSS.</li>
+            </ol>
+            <br>
+            <ul><li>Example</li></ul>
+            <img src = "pic1.jpg">
+            <br><br>
+            <li><b>Adobe Fonts:</b><br>Adobe Fonts (formerly Typekit) offers a vast library of high-quality fonts. You can include them in your project by linking to Adobe’s servers.</li>
+            <br>
+            <ul><li>Example</li></ul>
+            <img src = "pic2.jpg">
+            <br><br>
+            <li><b>Self-Hosted Fonts:</b><br>If you prefer to host fonts on your own server, you can do so by using the @font-face rule (as discussed in the first point).</li>
+            <br>
+            <ul><li>Example</li></ul>
+            <img src = "pic3.jpg">
+            <br><br>
+            <li><b>Browser Support:</b> Font hosting services work across modern browsers, ensuring consistent font rendering for your users.</li>
+        </ul>
+    </ul>
+    <hr>
+    <footer class = last-updated>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>    
+</body>
+</html>
