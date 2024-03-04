@@ -1,0 +1,75 @@
+@import url('https://fonts.cdnfonts.com/css/naston');
+@import url('https://fonts.cdnfonts.com/css/bruno-ace-sc-2');
+@import url('https://fonts.cdnfonts.com/css/genos');
+.body{
+    background-image: linear-gradient(to right,  #09203F, #537895);
+    padding: 2%;
+}
+.title{
+    background-image: url('title1.jpg');
+    background-size: cover;
+    background-size: 100%;
+    border-radius: 15px;
+    text-align: left;
+    padding-top: 11%;
+    padding-bottom: 11%;
+    padding-left: 5%;
+    font-size: 60px;
+    color: whitesmoke;
+    font-family: 'Naston', sans-serif;
+    border-color: gray;
+    border-style: solid;
+    border-left-width: 3px;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+
+}
+h1{
+    font-family: 'Bruno Ace SC', sans-serif;
+    color: whitesmoke;
+    font-size: 25px;
+    font-style: italic;
+    
+}
+a{
+    border-color: grey;
+    border-style: solid;
+    border-radius: 10px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 3px;
+    border-bottom-width: 1px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+
+}
+p,ul,ol{
+    font-family: 'Genos', sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 600;
+}
+figcaption{
+    font-family: 'Genos', sans-serif;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+.logo{
+    height: 200px;
+    margin-right: 50px;
+    border-radius: 100px;
+}
+.ss{
+    width: 500px;
+    border-radius: 5px;
+
+}
+.ssu{
+    width: 700px;
+    border-radius: 7px;
+
+}
