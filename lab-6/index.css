@@ -1,0 +1,134 @@
+@import url('https://fonts.cdnfonts.com/css/nevermind-bauhaus');
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* Sidebars and main content */
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    grid-template-areas: 
+        "header header header"
+        "nav content ad"
+        "footer footer footer";
+    gap: 10px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'NeverMind Bauhaus', sans-serif;
+    background-color: #eaeaea;
+}
+
+header {
+    grid-area: header;
+    background-color: #092635;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+main {
+    grid-area: content;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Existing styles... */
+
+.converter {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.temp-input, .temp-type {
+    width: 30%; /* Adjust width as needed */
+    padding: 12px 15px; /* Increase padding for better visibility */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em; /* Adjust font size for better readability */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.temp-type {
+    width: auto; /* Adjust width for dropdown */
+}
+
+.convert-button {
+    padding: 12px 20px; /* Increase padding for a larger button */
+    background-color: #092635;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em; /* Adjust font size for better readability */
+    transition: background-color 0.3s;
+}
+
+.convert-button:hover {
+    background-color: #092635;
+}
+
+.converted-temp {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: inline-block;
+}
+
+/* Additional styles... */
+
+aside {
+    grid-area: ad;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Adjust as needed */
+}
+
+footer {
+    grid-area: footer;
+    background-color:#092635;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-areas:
+            "header"
+            "nav"
+            "content"
+            "ad"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    nav, aside {
+        padding: 10px;
+    }
+}
