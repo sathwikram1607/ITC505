@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - Version 2</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temperature Converter</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="converter">
+            <input type="number" id="tempInput" class="temp-input" placeholder="Enter temperature">
+            <select id="tempType" class="temp-type">
+                <option value="celsius">Celsius to Fahrenheit</option>
+                <option value="fahrenheit">Fahrenheit to Celsius</option>
+            </select>
+            <br>
+            <button onclick="convertTemperature()" class="convert-button">Convert</button>
+            <br>
+            <div id="convertedTemp" class="converted-temp"></div>
+        </div>
+    </main>
+    <aside>
+        <a href="https://www.amazon.com/Sony-WH-1000XM4-Canceling-Headphones-phone-call/dp/B08MVGF24M/ref=sr_1_3?crid=2S2X73GSEST9K&dib=eyJ2IjoiMSJ9.MgM6-lbRTKDHvPRGufMVFU0dG5BBx4WR7sbAlnm0A3uGkCX-ClRRN25yhjgDw84ZbjOpML-iRpWdVHLQjirKHyYumtdqCmf9TCgrsqCOybS45YZTBegSuVJXhNXoeg2X3XbsjrgEA9Zt8O9u4f3YudjuNHYE0r7hadw2doPckDPaDvKeXK88-1ZKm4EpAGU8qXwDkbTrI8zpCH9cDloz5KepqknHpPauvDJK1L5n8FE.MowkvYk5f0LBkPVlJ9cn47ARWuXB03bId12eBmwRDGE&dib_tag=se&keywords=sony%2Bheadphones&qid=1711951248&sprefix=sony%2B%2Caps%2C222&sr=8-3&th=1" target="_blank">
+            <img src="sony.jpg" alt="Advertisement">
+        </a>
+        <h3>Click on the image to redirect to amazon.com</h3>
+    </aside>
+    <footer>
+        <h3>Addendum</h3>
+        <p>
+            <strong>Project Overview:</strong> This web page features a temperature converter tool, designed to convert temperatures between Celsius and Fahrenheit. The user can input a temperature value, select the conversion direction, and receive the converted temperature as output.
+        </p>
+        <p>
+            <strong>Implementation Details:</strong> The temperature converter is implemented using JavaScript. It involves capturing user input from an HTML form, processing the conversion in JavaScript based on the selected option (Celsius to Fahrenheit or vice versa), and displaying the result on the page.
+        </p>
+        <p>
+            <strong>Challenges and Solutions:</strong> A significant challenge was ensuring accurate conversion and handling invalid inputs. This was addressed by implementing input validation and using precise formulas for temperature conversion. Another challenge was creating a responsive and intuitive user interface, which was achieved using CSS Grid layout and modern styling techniques.
+        </p>
+        <p>
+            <strong>Learning Outcomes:</strong> Through this project, I gained a deeper understanding of JavaScript event handling, form input processing, and responsive web design using CSS Grid. It also reinforced the importance of user input validation and clear user feedback in web applications.
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
