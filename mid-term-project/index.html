@@ -1,1 +1,53 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Twisted Timelines Adventure</title>
+</head>
+<body>
+  <div id="game-container">
+    <div id="story">
+      <p id="story-text">You find yourself in a world of twisted timelines. Choose your actions carefully.</p>
+      <img id="story-image" src="https://previews.123rf.com/images/cometakatie/cometakatie2110/cometakatie211000044/177561468-abstract-time-theme-background-made-of-twisted-watch-faces-parallel-timeline-and-temporal-cycle.jpg" alt="Story Image">
+    </div>
+    <div id="choices"></div>
+    <div>
+    <button id="start-button" onclick="startGame()">Restart</button>
+    
+  </div>
+  </div>
+  <br>
+    <div id="addendum">
+      <h2>Addendum</h2>
+      <p><strong>Narrative Design Precision:</strong> Deliberate construction of a branching storyline, providing players with impactful choices to shape their unique adventure.</p>
+      <p><strong>Visual Immersion Strategies:</strong> Careful selection of visually evocative images, ranging from medieval realms to futuristic landscapes, enhancing the atmospheric engagement.</p>
+      
+      <h2>User-Centric Experience Design</h2>
+      <p><strong>Interface Intuitiveness:</strong> Strategic layout design focused on user-friendly navigation, ensuring a seamless and intuitive gaming experience.</p>
+      <p><strong>Color and Style Choices:</strong> Thoughtful selection of color schemes and styles, complementing the narrative and creating a visually appealing environment for players.</p>
+      
+      <h2>Challenges and Solutions</h2>
+      <p><strong>Balancing Complexity and Accessibility:</strong> Iterative testing to strike the right balance between meaningful choices and avoiding player overwhelm, resulting in a refined gaming experience.</p>
+      
+      <h2>Insights into Interactive Storytelling</h2>
+      <p><strong>Dynamic Relationship Unveiled:</strong> Exploration of player responses to choices revealed the dynamic relationship between narrative and interactivity.</p>
+      <p><strong>Lessons in Design Simplicity:</strong> Recognition of the pivotal role simplicity plays in design, allowing the narrative to shine while maintaining an enjoyable user experience.</p>
+      
+      <h2>Conclusion: Beyond the Game</h2>
+      <p><strong>Narrative-Driven Game Design:</strong> "Twisted Timelines Adventure" is not merely a game; it represents an exploration of narrative possibilities within an interactive framework.</p>
+      <p><strong>Valuable Development Lessons:</strong> The challenges faced and insights gained contribute to a deeper understanding of narrative-driven game design.</p>
+    </div>
+    <footer>
+      <p>Last updated: 
+          <span id="lastModified"></span>
+      </p>
+  </footer>
+  <script type="text/javascript">
+       var x = document.lastModified;
+       document.getElementById('lastModified').textContent = x;
+  </script>
+<script src="index.js"></script>
+</body>
+</html>
