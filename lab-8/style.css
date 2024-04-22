@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #66a0df;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.error {
+  color: black;
+  margin-top: 10px;
+  background-color: #ffcccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+}
+.sedan-regular {
+  font-family: "Sedan", serif;
+  font-weight: 800;
+  font-style: normal;
+}
