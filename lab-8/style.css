@@ -1,0 +1,73 @@
+@import url('https://fonts.cdnfonts.com/css/nevermind-bauhaus');
+body {
+  font-family: 'NeverMind Bauhaus', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e7eaf6;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: 'NeverMind Bauhaus', sans-serif;
+}
+
+form {
+  background-color: #e7eaf6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'NeverMind Bauhaus', sans-serif;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #a4a4a4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #7a42f4;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'NeverMind Bauhaus', sans-serif;
+}
+form input[type="submit"]:hover {
+  background-color: black;
+}
+.error {
+  color: black;
+  margin-top: 10px;
+  background-color: #ffcccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+}
+.head-font {
+  font-family: 'NeverMind Bauhaus', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
